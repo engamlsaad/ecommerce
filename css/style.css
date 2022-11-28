@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Berkshire+Swash&family=Cairo:wght@700&family=Courgette&family=Dancing+Script:wght@400;500;600;700&family=Domine:wght@500&family=Dosis:wght@500;600;700;800&family=Fredericka+the+Great&family=Gideon+Roman&family=Heebo:wght@300;400;500;600;700;800;900&family=Inria+Serif:ital,wght@1,300;1,400&family=Jomhuria&family=Josefin+Sans:wght@200;300;400;500;600;700&family=Kaisei+Tokumin:wght@500&family=Kaushan+Script&family=Libre+Baskerville&family=Lobster&family=Lobster+Two&family=Noto+Serif:wght@700&family=Nunito:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;500;600;700&family=Playfair+Display:wght@800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@400;900&family=Roboto+Slab:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+/* Start Varaibles */
+:root {
+    --main-color: #fff;
+    --primary: #f5b500;
+    --secondary: #000;
+    --lg-font: 'Poppins', sans-serif;
+    --sm-font: 'Kaisei Tokumin', serif;
+    --text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    --transition: 0.5s;
+}
+/* End Varaibles */
+/* Start Global Rules */
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+body {
+    font-family: var(--lg-font);
+}
+.btn {
+    display: inline-block;
+    width: 6rem;
+    padding: 0.2rem 0.8rem;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0rem;
+    color: var(--secondary);
+    font-weight: 500;
+    transition: var(--transition);
+}
+.btn2 {
+    width: 10rem;
+    text-align: center;
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0rem;
+    color: var(--secondary);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-shadow: var(--text-shadow);
+    transition: var(--transition);
+}
+.btn3 {
+    width: 5.5rem;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0rem;
+    color: var(--secondary);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-shadow: var(--text-shadow);
+    transition: var(--transition);
+}
+.btn4 {
+    width: fit-content;
+    text-align: center;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    margin: 0.25rem 0.1rem;
+    background-color: var(--primary);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 0rem;
+    color: var(--secondary);
+    font-size: 0.9rem;
+    text-shadow: var(--text-shadow);
+    transition: var(--transition);
+    
+}
+.btn4:hover {
+    color: var(--main-color);
+}
+.btn:hover,
+.btn:focus,
+.btn2:hover,
+.btn2:focus,
+.btn3:focus,
+.btn3:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+}
+.btn2:focus,
+.btn3:focus {
+    box-shadow: 0 0 0.5rem 0.25rem rgba(245, 181, 0, 0.6);
+}
+/* End Global Rules */
+/* Start Nav Top */
+.nav-top {
+    background-color: var(--secondary);
+    padding: 0.25rem 0rem 0.5rem;
+}
+.nav-top h5 {
+    color: var(--main-color);
+    cursor: pointer;
+}
+.nav-top .side .icons svg {
+    color: var(--main-color);
+    cursor: pointer;
+}
+/* End Nav Top */
+/* Start Navbar */
+.navbar {
+    background-color: var(--primary);
+}
+.navbar .navbar-brand img {
+    width: 2rem;
+}
+.navbar .navbar-brand span {
+    color: var(--main-color);
+    font-family: var(--sm-font);
+    text-shadow: var(--text-shadow);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    color: var(--secondary);
+    text-shadow: var(--text-shadow);
+    font-size: 0.95rem;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: var(--main-color);
+}
+.navbar .icons svg {
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0.25rem var(--main-color);
+}
+/* End Navbar */
+/* Start Hero Section */
+.hero {
+    background-color: rgba(58, 57, 57, 0.87);
+    width: 100%;
+    height: 100vh;
+}
+.hero h1 {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    text-shadow: var(--text-shadow);
+}
+.hero p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: var(--text-shadow);
+}
+/* End Hero Section */
+/* Start Banner Section */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/banner-img-1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.banner .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.banner h1 {
+    font-family: var(--sm-font);
+}
+.banner h1 .content::after {
+    content: "";
+    color: var(--primary);
+    text-shadow: var(--text-shadow);
+    font-weight: bold;
+    animation: change 10s linear infinite;
+}
+@keyframes change {
+    0% {
+        content: "T-shirt";
+    }
+    10% {
+        content: "Shoes";
+    }
+    20% {
+        content: "Hoodies";
+    }
+    30% {
+        content: "Cap";
+    }
+    40% {
+        content: "Pants";
+    }
+    50% {
+        content: "Laptop";
+    }
+    60% {
+        content: "Keyboard";
+    }
+    70% {
+        content: "Cameras";
+    }
+    80% {
+        content: "Computer Mouse";
+    }
+    90% {
+        content: "Watch";
+    }
+    100% {
+        content: "Headphones";
+    }
+}
+.banner .btn2 {
+    text-transform: uppercase;
+}
+.banner .search {
+    border: none;
+    border-radius: 50px;
+    height: 60px;
+    background-color: #353b58;
+    padding: 10px;
+    transition: var(--transition);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 140px;
+}
+.banner .search:hover .search-text {
+    width: 100px;
+    padding: 0 6px;
+}
+.banner .search:hover .search-btn {
+    background-color: var(--primary);
+    color: var(--main-color);
+}
+.banner .search .search-btn svg {
+    color: var(--main-color);
+}
+.banner .search .search-text {
+    transition: var(--transition);
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    line-height: 40px;
+    color: var(--main-color);
+    width: 0;
+}
+.banner .search .search-btn {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End Banner Section */
+/* Start Product Section */
+.product .box {
+    border: 2px solid #ccc;
+    padding: 1rem;
+    border-radius: 0.375rem;
+}
+.product .box h5 {
+    text-shadow: var(--text-shadow);
+}
+.product .box .icons svg {
+    font-size: 0.8rem;
+    color: var(--primary);
+}
+/* End Product Section */
+/* Start Contact Section */
+.btn-primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    padding: 0.2rem 1rem;
+    text-shadow: var(--text-shadow);
+    transition: var(--transition);
+}
+.btn-primary:focus {
+    box-shadow: 0 0 1rem 1rem var(--primary);
+}
+/* End Contact Section */
+/* Start Offer Section */
+.offer .offers {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.offer .box {
+    padding: 1rem 0rem;
+}
+.offer .box svg {
+    font-size: 3rem;
+}
+.offer .box h5 span {
+    font-size: 0.75rem;
+    color: #777;
+}
+/* End Offer Section */
+/* Start Subscribe */
+.scribe .btn-primary {
+    color: var(--main-color);
+    padding: 0.375rem 0.75rem;
+}
+/* End Subscribe */
